@@ -1,0 +1,32 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,Segoe UI,Arial,sans-serif;color:#1c2833;background:#fff;line-height:1.5}
+a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:12px 5%;background:#111c;backdrop-filter:blur(8px);color:#fff}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem}
+.nav nav a{margin-left:22px;opacity:.85}.nav nav a:hover{opacity:1}
+.hero{position:relative;height:70vh;min-height:380px;overflow:hidden;background:#000}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s}
+.slide.active{opacity:1}
+.hero-text{position:absolute;left:5%;bottom:12%;color:#fff;text-shadow:0 2px 12px #0008;max-width:560px}
+.hero-text h1{font-size:clamp(2rem,5vw,3.6rem)}
+.btn{display:inline-block;margin-top:16px;padding:12px 26px;background:#e74c3c;color:#fff;border-radius:30px;font-weight:600}
+.section{padding:64px 5%}.alt{background:#f4f6f7}
+h2{font-size:2rem;margin-bottom:18px}h2 small{font-size:.9rem;color:#7f8c8d;font-weight:400}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filters button{border:1px solid #ccd1d1;background:#fff;padding:7px 16px;border-radius:20px;cursor:pointer;font:inherit}
+.filters button.on{background:#1c2833;color:#fff;border-color:#1c2833}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #0001;transition:transform .2s;cursor:pointer}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;display:block;aspect-ratio:8/5;object-fit:cover}
+.card .body{padding:14px 16px}.card h3{margin-bottom:4px}
+.card .meta{color:#7f8c8d;font-size:.9rem}.card .price{margin-top:8px;font-weight:700;color:#e74c3c;font-size:1.1rem}
+.masonry{columns:4 220px;column-gap:14px}
+.masonry img{width:100%;margin-bottom:14px;border-radius:10px;display:block;cursor:zoom-in;break-inside:avoid}
+footer{padding:28px;text-align:center;background:#111;color:#aaa;font-size:.9rem}
+.lightbox{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:50}
+.lightbox.open{display:flex}
+.lightbox figure{max-width:90vw;text-align:center;color:#fff}
+.lightbox img{max-width:90vw;max-height:80vh;border-radius:8px}
+.lightbox button{position:absolute;background:none;border:0;color:#fff;font-size:3rem;cursor:pointer;padding:10px 20px}
+#lbClose{top:10px;right:20px}#lbPrev{left:10px}#lbNext{right:10px}
